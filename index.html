@@ -18,19 +18,21 @@
     <script type="text/javascript">
         (function($) {
             $(window).on('load', function() {
-                $.instagramFeed({
-                    'username': 'google',
-                    'container': "#instagram-feed",
-                    'display_profile': false,
-                    'display_biography': false,
-                    'display_gallery': true,
-                    'get_raw_json': false,
-                    'callback': null,
-                    'styling': false,
-                    'items': 8,
-                    'items_per_row': 8,
-                    'margin': 0
-                });
+                setTimeout(function() { //setTimeout function
+                    $.instagramFeed({
+                        'username': 'google',
+                        'container': "#instagram-feed",
+                        'display_profile': false,
+                        'display_biography': false,
+                        'display_gallery': true,
+                        'get_raw_json': false,
+                        'callback': null,
+                        'styling': false,
+                        'items': 8,
+                        'items_per_row': 8,
+                        'margin': 0
+                    });
+                }, 3000); //setTimeout function
             });
         })(jQuery);
     </script>
